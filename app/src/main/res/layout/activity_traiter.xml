@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_zone"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    tools:context="com.zimaheka.merwan_walid.algerietelecome.traiter">
+
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#24333c"
+    android:padding="20dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/Textview"
+        android:text="Traitement"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#ffffff"
+        android:textAlignment="center" />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+
+            <RadioButton
+                android:text="Boite Saruré"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sature"
+                android:textSize="25dp"
+                android:textColor="#fff"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:text="Boite Non Saturé"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="#fff"
+                android:id="@+id/nonsature"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:text="Boite Eloigné"
+                android:textSize="25dp"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/eloigne"
+                android:layout_weight="1" />
+        </RadioGroup>
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:hint="La Distance"
+        android:textColorHint="#ffffff"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:hint="N° De Reference"
+        android:textSize="25dp"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:textColorHint="#fff"/>
+
+    <Button
+        android:text="Enregistrer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:onClick="enregistrer"
+        android:background="#1ab188"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp" />
+
+</LinearLayout>
+</RelativeLayout>
+
